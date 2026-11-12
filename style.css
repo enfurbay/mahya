@@ -1,0 +1,25 @@
+:root { --ink: #070b18; --navy: #0d1430; --card: rgba(27, 35, 68, .72); --gold: #e8c877; --text: #f4f0e6; --muted: rgba(244, 240, 230, .68); }
+* { box-sizing: border-box; }
+html { background: var(--ink); }
+body { margin: 0; min-height: 100vh; color: var(--text); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  background: radial-gradient(1200px 700px at 20% -10%, rgba(58, 63, 176, .35), transparent 70%),
+              radial-gradient(900px 600px at 100% 30%, rgba(106, 63, 168, .28), transparent 70%),
+              linear-gradient(180deg, #060915, #0b1230 40%, #141c40); background-attachment: fixed; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+header.site { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+header.site img { width: 56px; height: 56px; border-radius: 13px; }
+header.site a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; }
+header.site span { display: block; color: var(--muted); font-size: 14px; font-weight: 400; }
+h1 { font-size: 34px; line-height: 1.2; letter-spacing: -.5px; margin: 0 0 6px; color: var(--gold); }
+h2 { font-size: 21px; margin: 34px 0 8px; }
+p, li { color: var(--muted); }
+p strong, li strong { color: var(--text); }
+a { color: var(--gold); }
+.updated { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+.card { background: var(--card); border: 1px solid rgba(255, 255, 255, .1); border-radius: 18px; padding: 20px 22px; margin: 18px 0; }
+.links { display: grid; gap: 12px; margin-top: 24px; }
+.links a { display: block; background: var(--card); border: 1px solid rgba(255, 255, 255, .1); border-radius: 16px; padding: 16px 20px; text-decoration: none; color: var(--text); font-weight: 600; }
+.links a span { display: block; color: var(--muted); font-weight: 400; font-size: 15px; }
+.button { display: inline-block; background: var(--gold); color: #0d1430; font-weight: 700; text-decoration: none; padding: 12px 22px; border-radius: 999px; margin-top: 8px; }
+footer { margin-top: 56px; font-size: 14px; color: var(--muted); border-top: 1px solid rgba(255, 255, 255, .1); padding-top: 20px; }
+footer a { margin-right: 16px; }
